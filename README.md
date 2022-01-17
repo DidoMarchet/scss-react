@@ -4,8 +4,6 @@
 ### Table of content:
 - [Options](#options)
 - [Usage](#usage)
-- [Example](#example)
-- [Thanks](#thanks)
 
 Install the package via npm:
 
