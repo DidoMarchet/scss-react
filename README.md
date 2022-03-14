@@ -1,5 +1,6 @@
 
 # react()
+A useful scss mixin to manage your media queries with charme :tophat:
 
 ### Table of content:
 - [Options](#options)
