@@ -4,8 +4,8 @@ $defaults_react_breakpoints: (
   "large": (min-width: 1000px),
   "xlarge": (min-width: 1300px),
   "xxlarge": (min-width: 1600px),
-  "pointer": (pointer: fine) and (hover: hover),
-  "touch": (pointer: coarse) and (hover: none)
+  "pointer": "(pointer: fine) and (hover: hover)",
+  "touch": "(pointer: coarse) and (hover: none)"
 );
 
 $react_breakpoints: ()!default;

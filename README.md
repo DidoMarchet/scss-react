@@ -31,8 +31,8 @@ $defaults: (
   "medium": (min-width: 750px),
   "large": (min-width: 1000px),
   "xlarge": (min-width: 1300px),
-  "pointer": (pointer: fine) and (hover: hover),
-  "touch": (pointer: coarse) and (hover: none)
+  "pointer": "(pointer: fine) and (hover: hover)",
+  "touch": "(pointer: coarse) and (hover: none)"
 );
 ```
 
@@ -40,12 +40,15 @@ Using `$queries` variable in your scss stylesheet you can **easily extend and ov
 
 ``` scss
 $queries: (
-  "tablet": (min-width: 768px) and (max-width: 1024px),
+  "tablet": "(min-width: 768px) and (max-width: 1024px)",
   "xlarge": (min-width: 1600px),
-  "xlarge-retina": (-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px)
+  "xlarge-retina": "(-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px)"
   /// [ ...other rules ]
 );
 ```
+
+❗ Combined rules, such as `(min-width: 768px) and (max-width: 1024px)`, must be a a **quoted string** `"(min-width: 768px) and (max-width: 1024px)"`.
+If they are not, only the right side of the operator will be considered `(max-width: 1024px)`
 
 The resulting set of values will be the merge of `$defaults` and `$queries` variables:
 
@@ -55,10 +58,10 @@ The resulting set of values will be the merge of `$defaults` and `$queries` vari
   "medium": (min-width: 750px),
   "large": (min-width: 1000px),
   "xlarge": (min-width: 1600px), // overrited 
-  "pointer": (pointer: fine) and (hover: hover),
-  "touch": (pointer: coarse) and (hover: none),
-  "tablet": (min-width: 768px) and (max-width: 1024px), // added
-  "large-retina": (-webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px) // added
+  "pointer": "(pointer: fine) and (hover: hover)",
+  "touch": "(pointer: coarse) and (hover: none)",
+  "tablet": "(min-width: 768px) and (max-width: 1024px)", // added
+  "large-retina": "(-webkit-min-device-pixel-ratio: 2)  and (min-width: 1300px)" // added
 */
 ```
 
