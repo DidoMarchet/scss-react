@@ -24,10 +24,10 @@ and include it using an **@import** statement:
 # Options
 First of all we set up the media queries and features **we'll use along all the application**.
 
-The library comes with a list of [default queries and features](https://github.com/DidoMarchet/scss-utopia/blob/main/src/queries.scss):
+The library comes with a list of [default queries and features](https://github.com/DidoMarchet/scss-react/blob/main/src/options.scss):
 
 ``` scss
-$defaults: (
+$defaults_react_breakpoints: (
   "small": (min-width: 320px), 
   "medium": (min-width: 750px),
   "large": (min-width: 1000px),
@@ -37,10 +37,10 @@ $defaults: (
 );
 ```
 
-Using `$queries` variable in your scss stylesheet you can **easily extend and override** the default values adopting **consistent naming convention**:
+Using `$react_breakpoints` variable in your scss stylesheet you can **easily extend and override** the default values adopting **consistent naming convention**:
 
 ``` scss
-$queries: (
+$react_breakpoints: (
   "tablet": "(min-width: 768px) and (max-width: 1024px)",
   "xlarge": (min-width: 1600px),
   "xlarge-retina": "(-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px)"
