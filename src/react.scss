@@ -1,7 +1,7 @@
-/// Original mixins https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 /// @author Davide Marchet
 /// @param {String} $query - Query name
-/// @require $queries
+/// @description Mixin per la gestione delle media query reattive
+/// @require $defaults_react_breakpoints, $react_breakpoints
 
 @mixin react($query) {
   $merged: map.merge($defaults_react_breakpoints, $react_breakpoints);
@@ -17,8 +17,7 @@
         @content;
       }
     }
-  }
-  @else {
+  } @else {
     @warn "No value could be retrieved from `#{$query}`. "
         + "Available queries are: #{map.keys(map.merge($defaults_react_breakpoints, $react_breakpoints))}.";
   }
