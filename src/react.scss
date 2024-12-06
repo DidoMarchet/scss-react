@@ -2,19 +2,21 @@
 /// @param {String} $query - Query name
 /// @description Mixin per la gestione delle media query reattive
 /// @require $defaults_react_breakpoints, $react_breakpoints
-@use 'sass:map'; 
+
+@use 'sass:map';
+@use 'sass:meta';
 
 @mixin react($query) {
   $merged: map.merge($defaults_react_breakpoints, $react_breakpoints);
 
   @if map.has-key($merged, $query) {
     $query: map.get($merged, $query);
-    @if type-of($query) == string {
-      @media #{unquote($query)} {
+    @if meta.type-of($query) == 'string' {
+      @media #{meta.inspect($query)} {
         @content;
       }
     } @else {
-      @media #{inspect($query)} {
+      @media #{meta.inspect($query)} {
         @content;
       }
     }
