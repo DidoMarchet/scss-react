@@ -2,23 +2,29 @@
 /// @author Davide Marchet
 /// @param {String} $query - Query name
 /// @require $queries
+/// 
+/// 
+@use 'sass:string';
+@use "sass:map";
+@use "sass:meta";
 
 @mixin react($query) {
-  $merged: map-merge($defaults_react_breakpoints, $react_breakpoints);
-  @if map-has-key($merged, $query) {
-    $query: map-get($merged, $query);
-    @if type-of($query) == string {
-      @media #{unquote($query)} {
+  $merged: map.merge($defaults_react_breakpoints, $react_breakpoints);
+  @if map.has-key($merged, $query) {
+    $query: map.get($merged, $query);
+
+    @if meta.type-of($query) == string {
+      @media #{$query} {
         @content;
       }
     } @else {
-      @media #{inspect($query)} {
+      @media #{meta.inspect($query)} {
         @content;
       }
     }
   }
   @else {
     @warn "No value could be retrieved from `#{$query}`. "
-        + "Available queries are: #{map-keys(map-merge($defaults_react_breakpoints, $react_breakpoints))}.";
+        + "Available queries are: #{map.keys(map.merge($defaults_react_breakpoints, $react_breakpoints))}.";
   }
 }
