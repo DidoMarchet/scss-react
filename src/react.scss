@@ -2,6 +2,7 @@
 /// @param {String} $query - Query name
 /// @description Mixin per la gestione delle media query reattive
 /// @require $defaults_react_breakpoints, $react_breakpoints
+@use 'sass:map'; 
 
 @mixin react($query) {
   $merged: map.merge($defaults_react_breakpoints, $react_breakpoints);
