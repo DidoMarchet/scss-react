@@ -73,6 +73,8 @@ $react_breakpoints: (
 ❗ Combined rules, such as `(min-width: 768px) and (max-width: 1024px)`, must be a a **quoted string** `"(min-width: 768px) and (max-width: 1024px)"`.
 If they are not, only the right side of the operator will be considered `(max-width: 1024px)`
 
+❗ If you use `@use` or `@forward`, the override of the `$react_breakpoints` variable must be done directly within the component (or in a subsequently imported file) depending on your SCSS build system. Ensure that the import order allows the default values to be properly overridden.
+
 # Usage
 
 ``` scss
