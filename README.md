@@ -120,7 +120,5 @@ This library is trusted and used by several high-profile websites and applicatio
 - [Emblema Bike](https://www.emblema.bike/)
 - [La Mia Cantina](https://www.lamiacantina.it/)
 - [BlueMotion 3D](https://www.bluemotion3d.com/)
-- [Airness App](https://play.google.com/store/apps/details?id=eu.airness.appstore) *(Google Play)*
-- [Airdom App](https://apps.apple.com/ba/app/airdom/id6447354554) *(App Store)*
 
 ...and many others.
