@@ -25,7 +25,7 @@ and include it using an **@import** statement:
 # Options
 First of all, we set up the media queries and features **we'll use throughout the application**.
 
-The library comes with a list of [default queries and features](doc/OPTIONS.MD), ensuring compatibility with the most commonly used media features as defined in the [MDN media query specifications](https://developer.mozilla.org/en-US/docs/Web/CSS/@media).  
+The library comes with a list of [default queries and features](doc/OPTIONS.md), ensuring compatibility with the most commonly used media features as defined in the [MDN media query specifications](https://developer.mozilla.org/en-US/docs/Web/CSS/@media).  
 These include breakpoints for responsive design, orientation detection, color scheme preferences, and input methods such as pointer and hover capabilities.
 
 
