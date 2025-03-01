@@ -1,3 +1,17 @@
+# Default Media Queries Configuration for scss-react
+
+These defaults cover a wide range of media conditions including:
+
+- Mobile-first breakpoints (using `min-width`)
+- "Less than" breakpoints (using `max-width`)
+- Orientation (portrait, landscape)
+- Color scheme preferences (dark, light)
+- Motion preferences, inverted colors, print media, resolution (retina)
+- Pointer & hover capabilities, contrast preferences, display modes, scripting, scan methods, device shape, update frequency, overflow behavior, grid support, ambient light levels, forced colors, legacy device dimensions, aspect ratios, and color depth/monochrome features
+
+Below is the complete default configuration:
+
+```scss
 $defaults_react_breakpoints: (
   // ---------------------------
   // Legacy Breakpoints (min-width)
@@ -7,6 +21,8 @@ $defaults_react_breakpoints: (
   "large": (min-width: 1000px),           // Legacy: Large devices
   "xlarge": (min-width: 1300px),          // Legacy: Extra large devices
   "xxlarge": (min-width: 1600px),         // Legacy: Very large devices
+  "pointer-and-hover": "(pointer: fine) and (hover: hover)", // Legacy combined condition
+  "touch": "(pointer: coarse) and (hover: none)",            // Legacy touch devices
 
   // ---------------------------
   // Mobile-First Breakpoints (min-width) using ">=KEY"
@@ -74,10 +90,8 @@ $defaults_react_breakpoints: (
   // Pointer & Hover Features
   // ---------------------------
   "pointer": "(pointer: fine)",              // Primary input device is precise (e.g., mouse)
-  "pointer-and-hover": "(pointer: fine) and (hover: hover)", // Legacy combined condition
   "no-pointer": "(pointer: none)",            // No primary pointing device available
   "hover": "(hover: hover)",                  // Primary input supports hover
-  "touch": "(pointer: coarse) and (hover: none)",            // Legacy touch devices
   "no-hover": "(hover: none)",                // Primary input does not support hover
   "any-pointer-fine": "(any-pointer: fine)",    // At least one input device is fine
   "any-pointer-coarse": "(any-pointer: coarse)",// At least one input device is coarse (e.g., touch)
@@ -178,5 +192,4 @@ $defaults_react_breakpoints: (
   "monochrome-0": "(monochrome: 0)",        // Full color (no monochrome)
   "monochrome-1": "(monochrome: 1)"         // 1-bit monochrome output (example)
 );
-
-$react_breakpoints: ()!default;
+```
