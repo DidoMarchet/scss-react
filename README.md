@@ -32,12 +32,12 @@ These include breakpoints for responsive design, orientation detection, color sc
 ``` scss
 $defaults_react_breakpoints: (
   // Mobile-first breakpoints (min-width)
-  ">=xxsmall": (min-width: 280px),
-  ">=xsmall":  (min-width: 360px),
-  ">=small":   (min-width: 480px),
-  ">=medium":  (min-width: 768px),
-  ">=large":   (min-width: 1024px),
-  // [...] additional breakpoints like ">=xlarge", ">=xxlarge", etc.
+  "xxsmall": (min-width: 280px),
+  "xsmall":  (min-width: 360px),
+  "small":   (min-width: 480px),
+  "medium":  (min-width: 768px),
+  "large":   (min-width: 1024px),
+  // [...] additional breakpoints like "xlarge", "xxlarge", etc.
 
   // "Less than" breakpoints (max-width)
   "<small":    (max-width: 479px),

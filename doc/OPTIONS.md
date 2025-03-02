@@ -25,18 +25,18 @@ $defaults_react_breakpoints: (
   "touch": "(pointer: coarse) and (hover: none)",            // Legacy touch devices
 
   // ---------------------------
-  // Mobile-First Breakpoints (min-width) using ">=KEY"
+  // Mobile-First Breakpoints (min-width) using "KEY"
   // ---------------------------
-  ">=xxsmall": (min-width: 280px),  // Extra extra small devices
-  ">=xsmall": (min-width: 360px),     // Extra small devices
-  ">=small": (min-width: 480px),      // Small devices
-  ">=medium": (min-width: 768px),     // Medium devices (e.g., tablets)
-  ">=large": (min-width: 1024px),     // Large devices (e.g., small laptops)
-  ">=xlarge": (min-width: 1280px),    // Extra large devices (desktops)
-  ">=xxlarge": (min-width: 1440px),    // Very large screens
-  ">=xxxlarge": (min-width: 1920px),   // Full HD screens
-  ">=4k": (min-width: 2560px),         // 2K screens
-  ">=5k": (min-width: 3840px),         // 4K screens
+  "xxsmall": (min-width: 280px),  // Extra extra small devices
+  "xsmall": (min-width: 360px),     // Extra small devices
+  "small": (min-width: 480px),      // Small devices
+  "medium": (min-width: 768px),     // Medium devices (e.g., tablets)
+  "large": (min-width: 1024px),     // Large devices (e.g., small laptops)
+  "xlarge": (min-width: 1280px),    // Extra large devices (desktops)
+  "xxlarge": (min-width: 1440px),    // Very large screens
+  "xxxlarge": (min-width: 1920px),   // Full HD screens
+  "4k": (min-width: 2560px),         // 2K screens
+  "5k": (min-width: 3840px),         // 4K screens
 
   // ---------------------------
   // "Less Than" Breakpoints (max-width) using "<KEY"
