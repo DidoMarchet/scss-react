@@ -7,19 +7,23 @@ A useful scss mixin to manage your media queries with charme :tophat:
 - [Usage](#usage)
 - [Adopted by E-commerce Platforms, Apps, and Websites](#adopted-by-e-commerce-platforms-apps-and-websites)
 
-Install the package via npm:
+Install the package:
 
 ``` bash
 npm i scss-react
+/// pnpm i scss-react
+// Others
 ```
 
-and include it using an **@import** statement:
+And include it using an **@import**, **@use**, or **@forward** statement, depending on your setup:
 
 ``` scss
-@import '~scss-react';
+@import 'scss-react';
 
 /// @import 'node_modules/scss-slamp/dist/index.scss';
-/// [...]
+/// @use 'scss-react' as *;
+/// @forward 'scss-react';
+
 ```
 
 # Options
