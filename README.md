@@ -11,7 +11,7 @@ Install the package:
 
 ``` bash
 npm i scss-react
-/// pnpm i scss-react
+// pnpm i scss-react
 // Others
 ```
 
@@ -20,9 +20,9 @@ And include it using an **@import**, **@use**, or **@forward** statement, depend
 ``` scss
 @import 'scss-react';
 
-/// @import 'node_modules/scss-slamp/dist/index.scss';
-/// @use 'scss-react' as *;
-/// @forward 'scss-react';
+// @import 'node_modules/scss-slamp/dist/index.scss';
+// @use 'scss-react' as *;
+// @forward 'scss-react';
 
 ```
 
@@ -70,7 +70,7 @@ Using `$react_breakpoints` variable in your scss stylesheet you can **easily ext
 ``` scss
 $react_breakpoints: (
   "xlarge-retina": "(-webkit-min-device-pixel-ratio: 2) and (min-width: 1300px)"
-  /// [ ...other rules ]
+  // [ ...other rules ]
 );
 ```
 
