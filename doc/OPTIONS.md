@@ -14,17 +14,6 @@ Below is the complete default configuration:
 ```scss
 $defaults_react_breakpoints: (
   // ---------------------------
-  // Legacy Breakpoints (min-width)
-  // ---------------------------
-  "small": (min-width: 320px),            // Legacy: Small devices
-  "medium": (min-width: 750px),           // Legacy: Medium devices
-  "large": (min-width: 1000px),           // Legacy: Large devices
-  "xlarge": (min-width: 1300px),          // Legacy: Extra large devices
-  "xxlarge": (min-width: 1600px),         // Legacy: Very large devices
-  "pointer-and-hover": "(pointer: fine) and (hover: hover)", // Legacy combined condition
-  "touch": "(pointer: coarse) and (hover: none)",            // Legacy touch devices
-
-  // ---------------------------
   // Mobile-First Breakpoints (min-width) using "KEY"
   // ---------------------------
   "xxsmall": (min-width: 280px),  // Extra extra small devices
