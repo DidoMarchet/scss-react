@@ -2,16 +2,6 @@
 # scss-react — Charme media queries manager for Sass/SCSS
 ## Manage media queries in a clean, consistent, and readable way with a Sass/SCSS mixin.
 
-### You won't have to write messy `@media` blocks anymore because:
-
-:relaxed: Media queries are **essential** for responsive and adaptive UI — from breakpoints to input methods and color schemes.
-
-:worried: But `@media` rules often become **hard to maintain**, especially when breakpoints and features are scattered across the codebase.
-
-:triangular_ruler: With a **single source of truth** (named breakpoints + features) you keep everything consistent, readable, and scalable.
-
-:rocket: This is how `react()` works: a tiny mixin that “reacts” to your configured rules — **React to the viewport and device features**.
-
 ### Table of content:
 - [Options](#options)
 - [Usage](#usage)
