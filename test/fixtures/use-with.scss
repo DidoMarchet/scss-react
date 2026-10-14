@@ -1,0 +1,14 @@
+@use 'scss-react' as * with (
+  $react_breakpoints: (
+    '<medium': (max-width: 749px),
+    'dock': (min-width: 900px),
+  )
+);
+
+.card {
+  @include react('<medium') { padding: 12px; }
+  @include react('dock') { padding: 24px; }
+  @include react('large') { padding: 32px; }
+  @include react('pointer-and-hover') { &:hover { opacity: 0.8; } }
+  @include react('reduce-motion') { transition: none; }
+}

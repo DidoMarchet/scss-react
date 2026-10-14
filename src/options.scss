@@ -65,10 +65,10 @@ $defaults_react_breakpoints: (
   // Pointer & Hover Features
   // ---------------------------
   "pointer": "(pointer: fine)",              // Primary input device is precise (e.g., mouse)
-  "pointer-and-hover": "(pointer: fine) and (hover: hover)", // Legacy combined condition
+  "pointer-and-hover": "(pointer: fine) and (hover: hover)", // Mouse or trackpad: put :hover styles here
   "no-pointer": "(pointer: none)",            // No primary pointing device available
   "hover": "(hover: hover)",                  // Primary input supports hover
-  "touch": "(pointer: coarse) and (hover: none)",            // Legacy touch devices
+  "touch": "(pointer: coarse) and (hover: none)",            // Touch screen without hover
   "no-hover": "(hover: none)",                // Primary input does not support hover
   "any-pointer-fine": "(any-pointer: fine)",    // At least one input device is fine
   "any-pointer-coarse": "(any-pointer: coarse)",// At least one input device is coarse (e.g., touch)

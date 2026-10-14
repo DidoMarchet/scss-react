@@ -1,0 +1,8 @@
+// Design systems: a toolbox file forwards the library, components load the toolbox.
+@use 'core' as *;
+
+.card {
+  @include react('dock') { color: red; }
+  @include react('<dock') { color: blue; }
+  @include react('medium') { color: green; }
+}

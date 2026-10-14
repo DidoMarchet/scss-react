@@ -1,0 +1,7 @@
+@use 'scss-react' as *;
+
+$react_breakpoints: ('<medium': (max-width: 749px));
+
+.card {
+  @include react('<medium') { padding: 12px; }
+}

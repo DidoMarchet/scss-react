@@ -1,0 +1,503 @@
+@media (min-width: 280px) {
+  .key {
+    --key: "xxsmall";
+  }
+}
+
+@media (min-width: 360px) {
+  .key {
+    --key: "xsmall";
+  }
+}
+
+@media (min-width: 480px) {
+  .key {
+    --key: "small";
+  }
+}
+
+@media (min-width: 768px) {
+  .key {
+    --key: "medium";
+  }
+}
+
+@media (min-width: 1024px) {
+  .key {
+    --key: "large";
+  }
+}
+
+@media (min-width: 1280px) {
+  .key {
+    --key: "xlarge";
+  }
+}
+
+@media (min-width: 1440px) {
+  .key {
+    --key: "xxlarge";
+  }
+}
+
+@media (min-width: 1920px) {
+  .key {
+    --key: "xxxlarge";
+  }
+}
+
+@media (min-width: 2560px) {
+  .key {
+    --key: "4k";
+  }
+}
+
+@media (min-width: 3840px) {
+  .key {
+    --key: "5k";
+  }
+}
+
+@media (max-width: 279px) {
+  .key {
+    --key: "<xxsmall";
+  }
+}
+
+@media (max-width: 359px) {
+  .key {
+    --key: "<xsmall";
+  }
+}
+
+@media (max-width: 479px) {
+  .key {
+    --key: "<small";
+  }
+}
+
+@media (max-width: 749px) {
+  .key {
+    --key: "<medium";
+  }
+}
+
+@media (max-width: 1023px) {
+  .key {
+    --key: "<large";
+  }
+}
+
+@media (max-width: 1279px) {
+  .key {
+    --key: "<xlarge";
+  }
+}
+
+@media (max-width: 1439px) {
+  .key {
+    --key: "<xxlarge";
+  }
+}
+
+@media (max-width: 1919px) {
+  .key {
+    --key: "<xxxlarge";
+  }
+}
+
+@media (max-width: 2559px) {
+  .key {
+    --key: "<4k";
+  }
+}
+
+@media (max-width: 3839px) {
+  .key {
+    --key: "<5k";
+  }
+}
+
+@media (orientation: portrait) {
+  .key {
+    --key: "portrait";
+  }
+}
+
+@media (orientation: landscape) {
+  .key {
+    --key: "landscape";
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .key {
+    --key: "dark";
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .key {
+    --key: "light";
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .key {
+    --key: "reduce-motion";
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .key {
+    --key: "no-reduce-motion";
+  }
+}
+
+@media (inverted-colors: inverted) {
+  .key {
+    --key: "inverted-colors";
+  }
+}
+
+@media (inverted-colors: none) {
+  .key {
+    --key: "no-inverted-colors";
+  }
+}
+
+@media print {
+  .key {
+    --key: "print";
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .key {
+    --key: "retina";
+  }
+}
+
+@media (pointer: fine) {
+  .key {
+    --key: "pointer";
+  }
+}
+
+@media (pointer: fine) and (hover: hover) {
+  .key {
+    --key: "pointer-and-hover";
+  }
+}
+
+@media (pointer: none) {
+  .key {
+    --key: "no-pointer";
+  }
+}
+
+@media (hover: hover) {
+  .key {
+    --key: "hover";
+  }
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .key {
+    --key: "touch";
+  }
+}
+
+@media (hover: none) {
+  .key {
+    --key: "no-hover";
+  }
+}
+
+@media (any-pointer: fine) {
+  .key {
+    --key: "any-pointer-fine";
+  }
+}
+
+@media (any-pointer: coarse) {
+  .key {
+    --key: "any-pointer-coarse";
+  }
+}
+
+@media (any-pointer: none) {
+  .key {
+    --key: "any-pointer-none";
+  }
+}
+
+@media (any-hover: hover) {
+  .key {
+    --key: "any-hover-hover";
+  }
+}
+
+@media (any-hover: none) {
+  .key {
+    --key: "any-hover-none";
+  }
+}
+
+@media (prefers-contrast: more) {
+  .key {
+    --key: "prefers-contrast-more";
+  }
+}
+
+@media (prefers-contrast: less) {
+  .key {
+    --key: "prefers-contrast-less";
+  }
+}
+
+@media (prefers-contrast: no-preference) {
+  .key {
+    --key: "prefers-contrast-no-preference";
+  }
+}
+
+@media (display-mode: standalone) {
+  .key {
+    --key: "display-mode-standalone";
+  }
+}
+
+@media (display-mode: fullscreen) {
+  .key {
+    --key: "display-mode-fullscreen";
+  }
+}
+
+@media (display-mode: minimal-ui) {
+  .key {
+    --key: "display-mode-minimal-ui";
+  }
+}
+
+@media (display-mode: browser) {
+  .key {
+    --key: "display-mode-browser";
+  }
+}
+
+@media (scripting: enabled) {
+  .key {
+    --key: "scripting-enabled";
+  }
+}
+
+@media (scripting: none) {
+  .key {
+    --key: "scripting-none";
+  }
+}
+
+@media (scan: progressive) {
+  .key {
+    --key: "scan-progressive";
+  }
+}
+
+@media (scan: interlace) {
+  .key {
+    --key: "scan-interlace";
+  }
+}
+
+@media (shape: rectangular) {
+  .key {
+    --key: "shape-rectangular";
+  }
+}
+
+@media (shape: round) {
+  .key {
+    --key: "shape-round";
+  }
+}
+
+@media (update: none) {
+  .key {
+    --key: "update-none";
+  }
+}
+
+@media (update: slow) {
+  .key {
+    --key: "update-slow";
+  }
+}
+
+@media (update: fast) {
+  .key {
+    --key: "update-fast";
+  }
+}
+
+@media (overflow-block: none) {
+  .key {
+    --key: "overflow-block-none";
+  }
+}
+
+@media (overflow-block: scroll) {
+  .key {
+    --key: "overflow-block-scroll";
+  }
+}
+
+@media (overflow-block: optional-paged) {
+  .key {
+    --key: "overflow-block-optional-paged";
+  }
+}
+
+@media (overflow-block: paged) {
+  .key {
+    --key: "overflow-block-paged";
+  }
+}
+
+@media (overflow-inline: none) {
+  .key {
+    --key: "overflow-inline-none";
+  }
+}
+
+@media (overflow-inline: scroll) {
+  .key {
+    --key: "overflow-inline-scroll";
+  }
+}
+
+@media (overflow-inline: optional-paged) {
+  .key {
+    --key: "overflow-inline-optional-paged";
+  }
+}
+
+@media (overflow-inline: paged) {
+  .key {
+    --key: "overflow-inline-paged";
+  }
+}
+
+@media (grid: 1) {
+  .key {
+    --key: "grid";
+  }
+}
+
+@media (grid: 0) {
+  .key {
+    --key: "no-grid";
+  }
+}
+
+@media (light-level: dim) {
+  .key {
+    --key: "light-level-dim";
+  }
+}
+
+@media (light-level: normal) {
+  .key {
+    --key: "light-level-normal";
+  }
+}
+
+@media (light-level: washed) {
+  .key {
+    --key: "light-level-washed";
+  }
+}
+
+@media (forced-colors: none) {
+  .key {
+    --key: "forced-colors-none";
+  }
+}
+
+@media (forced-colors: active) {
+  .key {
+    --key: "forced-colors-active";
+  }
+}
+
+@media (device-width: 1024px) {
+  .key {
+    --key: "device-width";
+  }
+}
+
+@media (device-height: 768px) {
+  .key {
+    --key: "device-height";
+  }
+}
+
+@media (device-aspect-ratio: 4/3) {
+  .key {
+    --key: "device-aspect-ratio";
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .key {
+    --key: "min-aspect-ratio-16-9";
+  }
+}
+
+@media (max-aspect-ratio: 4/3) {
+  .key {
+    --key: "max-aspect-ratio-4-3";
+  }
+}
+
+@media (color: 8) {
+  .key {
+    --key: "color-8";
+  }
+}
+
+@media (color: 10) {
+  .key {
+    --key: "color-10";
+  }
+}
+
+@media (color-index: 256) {
+  .key {
+    --key: "color-index-256";
+  }
+}
+
+@media (monochrome: 0) {
+  .key {
+    --key: "monochrome-0";
+  }
+}
+
+@media (monochrome: 1) {
+  .key {
+    --key: "monochrome-1";
+  }
+}
+
+@media (min-width: 1200px) {
+  .key {
+    --key: "mlarge";
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .key {
+    --key: "combined";
+  }
+}

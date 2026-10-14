@@ -1,10 +1,9 @@
 /// Original mixins https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/
 /// @author Davide Marchet
 /// @param {String} $query - Query name
-/// @require $queries
-/// 
-/// 
-@use 'sass:string';
+/// @require $defaults_react_breakpoints, $react_breakpoints
+///
+///
 @use "sass:map";
 @use "sass:meta";
 

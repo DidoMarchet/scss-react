@@ -1,0 +1,6 @@
+@forward 'scss-react' with (
+  $react_breakpoints: (
+    'dock': (min-width: 900px),
+    '<dock': (max-width: 899px),
+  )
+);

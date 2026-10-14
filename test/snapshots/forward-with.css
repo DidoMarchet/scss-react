@@ -1,0 +1,15 @@
+@media (min-width: 900px) {
+  .card {
+    color: red;
+  }
+}
+@media (max-width: 899px) {
+  .card {
+    color: blue;
+  }
+}
+@media (min-width: 768px) {
+  .card {
+    color: green;
+  }
+}

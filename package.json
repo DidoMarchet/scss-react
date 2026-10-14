@@ -1,25 +1,37 @@
 {
   "name": "scss-react",
-  "version": "1.3.3",
+  "version": "1.3.5",
   "files": [
     "dist"
   ],
   "main": "./dist/index.scss",
   "style": "./dist/index.scss",
   "devDependencies": {
-    "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-load-plugins": "^2.0.6"
+    "sass": "^1.105.1"
   },
   "scripts": {
-    "build": "gulp"
+    "build": "node scripts/build.mjs",
+    "test": "node --test",
+    "prepublishOnly": "npm run build && npm test"
   },
   "keywords": [
-    "Scss",
-    "Scss mixin",
-    "Scss media queries"
+    "sass",
+    "scss",
+    "media-queries",
+    "media-query",
+    "breakpoints",
+    "responsive",
+    "responsive-design",
+    "mobile-first",
+    "mixin",
+    "sass-mixin",
+    "scss-mixin",
+    "hover",
+    "prefers-reduced-motion",
+    "prefers-color-scheme",
+    "css"
   ],
-  "description": "",
+  "description": "Sass/SCSS mixin for media queries: name your breakpoints and media features once, then write @include react(\"medium\"). Hover, pointer, reduced motion, dark mode and print included.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DidoMarchet/scss-react.git"

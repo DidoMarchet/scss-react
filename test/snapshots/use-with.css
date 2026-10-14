@@ -1,0 +1,25 @@
+@media (max-width: 749px) {
+  .card {
+    padding: 12px;
+  }
+}
+@media (min-width: 900px) {
+  .card {
+    padding: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  .card {
+    padding: 32px;
+  }
+}
+@media (pointer: fine) and (hover: hover) {
+  .card:hover {
+    opacity: 0.8;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+}

@@ -1,0 +1,5 @@
+@use 'scss-react' as *;
+
+.card {
+  @include react('>=medium') { padding: 12px; }
+}

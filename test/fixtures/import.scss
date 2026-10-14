@@ -1,0 +1,17 @@
+// Old sites: @import of the dist path, then a reassignment of $react_breakpoints.
+@use 'sass:map';
+@import 'scss-react/dist/index';
+
+$react_breakpoints: (
+  '<medium': (max-width: 749px),
+  'mlarge': (min-width: 1200px),
+  'combined': "(min-width: 768px) and (max-width: 1024px)",
+);
+
+@each $key, $value in map.merge($defaults_react_breakpoints, $react_breakpoints) {
+  .key {
+    @include react($key) {
+      --key: "#{$key}";
+    }
+  }
+}
